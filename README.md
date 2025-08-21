@@ -1,1 +1,1 @@
-![Header](https://github.com/weegex/weegex/blob/main/header.png)
+![Header](https://github.com/weegex/weegex/blob/main/header.jpg)
