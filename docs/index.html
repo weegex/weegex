@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlickWing - Социальная сеть нового поколения</title>
+    <title>FlickWing - Социальная сеть нового времени</title>
     <style>
         * {
             margin: 0;
@@ -64,6 +64,14 @@
             color: #b0b0b0;
         }
 
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
@@ -75,6 +83,10 @@
             transition: transform 0.3s ease;
         }
 
+        .cta-button.secondary {
+            background: linear-gradient(45deg, #666, #444);
+        }
+
         .cta-button:hover {
             transform: translateY(-2px);
         }
@@ -83,6 +95,15 @@
         .features {
             padding: 80px 0;
             background-color: #111;
+        }
+
+        .feature-text {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            border-left: 4px solid #4a90e2;
         }
 
         .features-grid {
@@ -117,6 +138,16 @@
             font-size: 0.9rem;
             margin-top: 20px;
         }
+
+        .links {
+            margin: 20px 0;
+        }
+
+        .links a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 15px;
+        }
     </style>
 </head>
 <body>
@@ -132,31 +163,41 @@
     <section class="hero">
         <div class="container">
             <h1>FlickWing</h1>
-            <p>Социальная сеть нового поколения</p>
-            <p>Общайтесь, делитесь, открывайте новое. Быстрое, безопасное, современное.</p>
-            <a href="#waitlist" class="cta-button">Присоединиться к ожиданию</a>
+            <p>Социальная сеть нового времени</p>
+            
+            <div class="cta-buttons">
+                <a href="https://flickwing.ru/" class="cta-button">Официальный сайт</a>
+                <a href="https://flickwing.online/" class="cta-button secondary">Проверка Uptime</a>
+            </div>
         </div>
     </section>
 
     <section class="features">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Возможности FlickWing</h2>
+            <div class="feature-text">
+                <p>▌ Мы совмещаем лучшие социальные технологии, которые придумало человечество в единую сеть, которая станет для вас лучшим источником информации от реальных людей.</p>
+            </div>
+            
+            <div class="feature-text">
+                <p>▌ Видеохостинг, музыкальный стриминг, чаты, звонки, трансляции — всё в одном месте. Теперь не нужно скачивать множество приложений и регистрироваться в куче сервисов.</p>
+            </div>
+
+            <div class="feature-text">
+                <p>▌ Поисковик на основе реальных ответов пользователей! Теперь только непридуманные отзывы.</p>
+            </div>
+
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>Мгновенная связь</h3>
-                    <p>Общайтесь в реальном времени с друзьями и сообществами по всему миру</p>
+                    <h3>Единая платформа</h3>
+                    <p>Все социальные функции в одном приложении - больше не нужно переключаться между сервисами</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Умная лента</h3>
-                    <p>Персонализированный контент, который действительно интересен вам</p>
+                    <h3>Реальные отзывы</h3>
+                    <p>Только проверенная информация от реальных пользователей без накруток и фейков</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Безопасность</h3>
-                    <p>Передовые технологии защиты ваших данных и приватности</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Мультимедиа</h3>
-                    <p>Делитесь фото, видео и аудио в высочайшем качестве</p>
+                    <h3>Полная интеграция</h3>
+                    <p>Все сервисы связаны между собой для максимального удобства использования</p>
                 </div>
             </div>
         </div>
@@ -168,7 +209,13 @@
                 <span class="logo-icon">✈</span>
                 FlickWing
             </div>
-            <p>Социальная сеть будущего уже здесь</p>
+            <p>Социальная сеть нового времени</p>
+            
+            <div class="links">
+                <a href="https://flickwing.ru/">Официальный сайт</a>
+                <a href="https://flickwing.online/">Проверка Uptime</a>
+            </div>
+            
             <div class="developer">
                 Разработано: Misazix
             </div>
