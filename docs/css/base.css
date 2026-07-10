@@ -455,7 +455,6 @@ section#skills div.terminal {
     height: fit-content;
     
     will-change: transform;
-    /* transition: transform 2s ease-in; */
 }
 
 section#skills div.terminal:where(:nth-child(1), :nth-child(3)) {
@@ -463,19 +462,9 @@ section#skills div.terminal:where(:nth-child(1), :nth-child(3)) {
     top: 153px;
 }
 
-section#skills div.terminal:nth-child(1) {
-    transform: translate(var(--shake-a-x, 0px), var(--shake-a-y, 0px));
-}
-
 section#skills div.terminal:nth-child(2) {
     rotate: -4deg;
     top: -40px;
-
-    transform: translate(var(--shake-b-x, 0px), var(--shake-b-y, 0px));
-}
-
-section#skills div.terminal:nth-child(3) {
-    transform: translate(var(--shake-c-x, 0px), var(--shake-c-y, 0px));
 }
 
 
@@ -524,6 +513,18 @@ footer .container > p {
     a.button:hover {
         color: var(--base-color);
         background-color: var(--primary-color);
+    }
+
+    section#skills div.terminal:nth-child(1) {
+        transform: translate(var(--shake-a-x, 0px), var(--shake-a-y, 0px));
+    }
+    
+    section#skills div.terminal:nth-child(2) {
+        transform: translate(var(--shake-b-x, 0px), var(--shake-b-y, 0px));
+    }
+
+    section#skills div.terminal:nth-child(3) {
+        transform: translate(var(--shake-c-x, 0px), var(--shake-c-y, 0px));
     }
 }
 

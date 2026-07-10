@@ -78,3 +78,25 @@ if (abyss) {
 
     requestAnimationFrame(animateFloating);
 }
+
+const burgerMenu = document.querySelector('section#burger');
+const openBurgerButton = document.querySelector('ul#open-bg');
+const closeBurgerButton = document.querySelector('ul#close-bg');
+const listElements = document.querySelectorAll('section#burger ul li a');
+
+if (burgerMenu) {
+    console.log(openBurgerButton)
+    if (openBurgerButton) openBurgerButton.addEventListener("click", (e) => {
+        burgerMenu.classList.remove("hide");
+    });
+
+    if (closeBurgerButton) closeBurgerButton.addEventListener("click", (e) => {
+        burgerMenu.classList.add("hide");
+    });
+
+    listElements.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            burgerMenu.classList.add("hide");
+        });
+    });
+}
